@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,19 @@
   <title>Fun Board Games</title>
 
   <!------- Bootstrap CSS ------->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
   <!------- Fontawesome icon ------->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
 
   <!------- Google Fonts ------->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!------- Favicon ------->
   <link rel="icon" href="./css/icon.png">
@@ -22,17 +28,21 @@
   <!------- Custom CSS ------->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/mobile_style.css">
+  <link rel="stylesheet" href="./css/dropdown.css">
 </head>
+
 <body>
   <!------- Header Start ------->
   <header>
     <nav class="navbar navbar-expand-lg pt-1 pb-0">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="./index.html">
-          <img src="./images/company_logo.png" alt="Company Logo" width="45" height="45" class="d-inline-block align-text-center me-2">
+          <img src="./images/company_logo.png" alt="Company Logo" width="45" height="45"
+            class="d-inline-block align-text-center me-2">
           Fun Board Games
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-align-right"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -44,7 +54,7 @@
               <a class="nav-link" href="./index.html#categories">Категории</a>
             </li>
             <li class="nav-item me-1">
-              <a class="nav-link" href="">Каталог</a>
+              <a class="nav-link" href="./catalog.html">Каталог</a>
             </li>
             <li class="nav-item me-1">
               <a class="nav-link" href="./about.html">О нас</a>
@@ -87,7 +97,8 @@
                 <h1>БИЛЕТ НА ПОЕЗД: ЕВРОПА</h1>
                 <p>Игра о конкуренции нескольких железнодорожных компаний.
                   Ваша задача — прокладывать маршруты между городами,
-                  выполнять специальные задания, подбирать оптимальные пути для потока товаров — и срывать планы конкурентов.
+                  выполнять специальные задания, подбирать оптимальные пути для потока товаров — и срывать планы
+                  конкурентов.
                   Главное для вас — чистая прибыль и отсутствие конкуренции хотя бы в некоторых уголках Европы.</p>
               </div>
             </div>
@@ -103,7 +114,8 @@
                 <h5>Игры для вечеринки</h5>
                 <h1>ВЗРЫВНЫЕ КОТЯТА</h1>
                 <p>Кому-то эта игра напоминает «Уно», кому-то русскую рулетку.
-                  Вы тянете карты из колоды, в которой среди прочих карт замешаны взрывные котята — они сразу выкидывают вас из игры.
+                  Вы тянете карты из колоды, в которой среди прочих карт замешаны взрывные котята — они сразу выкидывают
+                  вас из игры.
                   Все остальные карты помогают избежать встречи с опасными котятами и подставить под удар друзей.
                   Останься последним выжившим.</p>
               </div>
@@ -134,16 +146,25 @@
         <h4> подбери игру под себя </h4>
       </div>
       <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Больше категорий
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li class="dropdown-item">Военные игры</li>
-          <li class="dropdown-item">Карточные игры</li>
-          <li class="dropdown-item">Игры с кубиками</li>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown" id="myDropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Больше категорий </a>
+            <ul class="dropdown-menu">
+              <li> <button class="dropdown-item" onclick="">Военные игры</button></li>
+              <li> <button class="dropdown-item" onclick=""> Детективные игры </button>
+                <ul class="submenu dropdown-menu">
+                  <li><button class="dropdown-item" onclick="" onclick="">Кооперативные</button></li>
+                  <li><button class="dropdown-item" onclick="" onclick="">Соревновательные</button></li>
+                </ul>
+              </li>
+              <li><button class="dropdown-item" onclick=""> Карточные игры </button></li>
+              <li><button class="dropdown-item" onclick=""> Детские игры </button></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
+
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5 text-center">
       <div class="col">
         <div class="card h-100 align-items-center">
@@ -179,7 +200,7 @@
             <h3 class="card-title">Детские</h3>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adicing elit distint provident</p>
           </div>
-         </div>
+        </div>
       </div>
       <div class="col">
         <div class="card h-100 align-items-center">
@@ -205,43 +226,49 @@
 
   <!------- Footer Start ------->
   <footer>
-  <div class="container-fluid">
-    <div class="row text-left g-5">
-      <div class="col-md-5 col-sm-12">
-        <h2>АДРЕС</h2>
-        <p class="pe-3">г. Москва, ул. Таллинская 34</p>
-        <h2 class="mt-5">КОНТАКТЫ</h2>
-        <p class="pe-3">Почта: <i>adpiskunov@miem.hse.ru</i><br>Телефон: <i>+79225563515</i></p>
-      </div>
-      <div class="col-md-5 col-sm-12">
-        <h2>НОВОСТНАЯ РАССЫЛКА</h2>
-        <p>Подпишитесь на последние новости настольных игр</p>
-        <form class="form-inline">
-          <div class="col">
-            <div class="input-group pe-5">
-              <input type="text" class="form-control" id="subscribe-email" placeholder="Email">
+    <div class="container-fluid">
+      <div class="row text-left g-5">
+        <div class="col-md-5 col-sm-12">
+          <h2>АДРЕС</h2>
+          <p class="pe-3">г. Москва, ул. Таллинская 34</p>
+          <h2 class="mt-5">КОНТАКТЫ</h2>
+          <p class="pe-3">Почта: <i>adpiskunov@miem.hse.ru</i><br>Телефон: <i>+79225563515</i></p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h2>НОВОСТНАЯ РАССЫЛКА</h2>
+          <p>Подпишитесь на последние новости настольных игр</p>
+          <form class="form-inline">
+            <div class="col">
+              <div class="input-group pe-5">
+                <input type="text" class="form-control" id="subscribe-email" placeholder="Email">
+              </div>
             </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h2>МЫ В СОЦСЕТЯХ</h2>
+          <div class="socials d-flex flex-row flex-wrap">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
           </div>
-        </form>
-      </div>
-      <div class="col-md-2 col-sm-12">
-        <h2>МЫ В СОЦСЕТЯХ</h2>
-        <div class="socials d-flex flex-row flex-wrap">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-youtube"></i>
         </div>
       </div>
-    </div>
-    <div class="text-center footer-end-text">
-      <span>© 2021. Fun Board Games Inc.</span>
-    </div>
+      <div class="text-center footer-end-text">
+        <span>© 2021. Fun Board Games Inc.</span>
+      </div>
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
   <!-- Custom JS -->
   <script src="./js/main.js"></script>
+  <script src="./js/dropdown.js"></script>
+  <!-- Atropos JS -->
+  <script src="atropos.min.js"></script>
 </body>
+
 </html>

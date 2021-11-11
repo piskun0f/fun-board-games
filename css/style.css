@@ -27,9 +27,8 @@ body {
 
 .about,
 .categories,
-.pizza,
 .reviews {
-  margin-top: 8rem;
+  margin-top: 2rem;
   padding-top: 2rem;
 }
 
@@ -111,10 +110,10 @@ p {
   padding: .4rem .6rem;
   font-family: var(--Poppins);
   font-size: .9rem;
-  color: white;
+  color: var(--primary-color-2);
   text-decoration: none;
-  border: 2px solid var(--primary-color-1);
-  background-color: var(--primary-color-1);
+  border: 2px  double var(--primary-color-1);
+  background-color: white;
   border-radius: .2rem;
   transition: all .3s ease;
   box-shadow: 5px 7px 5px var(--secondary-color-2);
@@ -264,15 +263,6 @@ header {
   color: var(--primary-color-2);
 }
 
-.dropdown-menu {
-  background-color: var(--primary-color-1);
-}
-
-.dropdown-item {
-  color: white;
-}
-
-/******** PIZZA CSS ********/
 
 .pizza {
   width: 85%;
@@ -289,7 +279,6 @@ header {
   border-radius: 5%;
 }
 
-/******** REVIEWS CSS ********/
 
 .reviews {
   width: 85%;
@@ -380,7 +369,7 @@ header {
 /******** FOOTER CSS ********/
 
 footer {
-  margin-top: 15rem;
+  margin-top: 5rem;
   padding: 3rem;
   color: var(--primary-color-1);
   background: var(--primary-color-2);
@@ -438,4 +427,145 @@ footer .socials .fa-twitter:hover {
 
 footer .socials .fa-youtube:hover {
   color: rgb(226, 5, 5);
+}
+
+div.cs-select {
+  display:inline-block;
+  vertical-align:middle;
+  position:relative;
+  text-align:left;
+  width:100%;
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  border:2px solid #64a6b5;
+  border-radius:2px;
+  background:#fff
+}
+
+div.cs-select:focus {
+  outline:0
+}
+
+.cs-select select {
+  display:none
+}
+
+.cs-select span {
+  display:block;
+  position:relative;
+  cursor:pointer;
+  padding:8px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis
+}
+
+.cs-select>span {
+  padding-right:3em
+}
+
+.cs-select .cs-selected span::after,.cs-select>span::after {
+  speak:none;
+  position:absolute;
+  top:50%;
+  -webkit-transform:translateY(-50%);
+  transform:translateY(-50%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+
+.cs-select>span::after {
+  content:'\25BE';
+  right:1em
+}
+
+.cs-select .cs-selected span::after {
+  content:'\2713';
+  margin-left:1em
+}
+
+.cs-select.cs-active>span::after {
+  -webkit-transform:translateY(-50%) rotate(180deg);
+  transform:translateY(-50%) rotate(180deg);
+  padding-left:0;
+  line-height:51px
+}
+
+.cs-select .cs-options{position:absolute;overflow:hidden;width:100%;background:#fff;visibility:hidden}
+
+.cs-select.cs-active .cs-options{visibility:visible;z-index:999}
+
+.cs-select ul{list-style:none;margin:0;padding:0;width:100%;max-height:250px}
+
+.cs-select ul li.cs-focus span{background-color:#ddd}
+
+.cs-select li.cs-optgroup ul{padding-left:1em}
+
+.cs-select li.cs-optgroup>span{cursor:default}
+
+div.cs-skin-elastic{background:0 0;font-size:13px}
+
+.cs-skin-elastic>span{background-color:#fff}
+
+.cs-skin-elastic>span::after{font-family:hg-icons;content:"\e901";
+  -webkit-backface-visibility:hidden;backface-visibility:hidden;background:#64a6b5;color:#fff;
+  top:16px;height:48px;line-height:48px;width:17px;text-align:center;right:0;font-size:10px;padding-left:2px}
+  
+.cs-skin-elastic .cs-options{overflow:visible;
+    background:0 0;opacity:1;pointer-events:none;box-shadow:0 1px 3px rgba(0,0,0,.15);margin-top:2px}
+    
+.cs-skin-elastic.cs-active .cs-options{pointer-events:auto}
+    
+.cs-skin-elastic .cs-options>ul::before{box-shadow:0 1px 3px rgba(0,0,0,.15);
+      content:'';position:absolute;width:100%;height:100%;left:0;top:0;-webkit-transform:scale3d(1,0,1);transform:scale3d(1,0,1);
+      background:#fff;-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-transition:-webkit-transform .3s;transition:transform .3s}
+      
+.cs-skin-elastic.cs-active .cs-options>ul::before{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);
+        -webkit-transition:none;transition:none;-webkit-animation:expand .6s ease-out;animation:expand .6s ease-out}
+        
+.cs-skin-elastic .cs-options ul li{opacity:0;-webkit-transform:translate3d(0,-25px,0);
+transform:translate3d(0,-25px,0);-webkit-transition:opacity .15s,-webkit-transform .15s;transition:opacity .15s,transform .15s}
+
+.cs-skin-elastic.cs-active .cs-options ul li{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1;-webkit-transition:none;
+transition:none;-webkit-animation:bounce .6s ease-out;animation:bounce .6s ease-out}
+
+.cs-skin-elastic.cs-active .cs-options ul li[data-option]:hover{background:#64a6b5}.cs-skin-elastic .cs-options span{background-repeat:no-repeat;
+background-position:1.5em 50%;background-size:2em auto;padding:10px}
+
+.cs-skin-elastic .cs-options li[data-option] span:hover,.cs-skin-elastic .cs-options li[data-option].cs-focus span{color:#fff;background:#64a6b5}
+
+@-webkit-keyframes expand{  
+  0%{-webkit-transform:scale3d(1,0,1)}
+  25%{-webkit-transform:scale3d(1,1.2,1)}  
+  50%{-webkit-transform:scale3d(1,.85,1)}
+  75%{-webkit-transform:scale3d(1,1.05,1)}  
+  100%{-webkit-transform:scale3d(1,1,1)}
+}
+
+@keyframes expand{  
+  0%{-webkit-transform:scale3d(1,0,1);transform:scale3d(1,0,1)}  
+  25%{-webkit-transform:scale3d(1,1.2,1);transform:scale3d(1,1.2,1)}  
+  50%{-webkit-transform:scale3d(1,.85,1);transform:scale3d(1,.85,1)}  
+  75%{-webkit-transform:scale3d(1,1.05,1);transform:scale3d(1,1.05,1)}
+  100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+}
+
+@-webkit-keyframes bounce{
+  0%{-webkit-transform:translate3d(0,-25px,0);opacity:0}
+  25%{-webkit-transform:translate3d(0,10px,0)}
+  50%{-webkit-transform:translate3d(0,-6px,0)}
+  75%{-webkit-transform:translate3d(0,2px,0)}
+  100%{-webkit-transform:translate3d(0,0,0);opacity:1}
+}
+  
+@keyframes bounce{
+  0%{-webkit-transform:translate3d(0,-25px,0);transform:translate3d(0,-25px,0);opacity:0}
+  25%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}
+  50%{-webkit-transform:translate3d(0,-6px,0);transform:translate3d(0,-6px,0)}
+  75%{-webkit-transform:translate3d(0,2px,0);transform:translate3d(0,2px,0)}
+  100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);opacity:1}
 }
