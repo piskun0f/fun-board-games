@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Board Games</title>
+
+  <!------- Bootstrap CSS ------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <!------- Fontawesome icon ------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+
+  <!------- Google Fonts ------->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!------- Favicon ------->
+  <link rel="icon" href="./css/icon.png">
+
+  <!------- Custom CSS ------->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile_style.css">
+  <link rel="stylesheet" href="./css/dropdown.css">
+
+  <style>
+    #contentX {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!------- Header Start ------->
+  <header>
+    <nav class="navbar navbar-expand-lg pt-1 pb-0">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="./index.html">
+          <img src="./images/company_logo.png" alt="Company Logo" width="45" height="45"
+            class="d-inline-block align-text-center me-2">
+          Fun Board Games
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-align-right"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-1">
+              <a class="nav-link active" aria-current="page" href="./index.html">Главная</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="./index.html#categories">Категории</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="./catalog.html">Каталог</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="./stats.html">Статистика</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="./form.html">Рекомендации</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link" href="./about.html">О нас</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!------- Header End ------->
+
+
+  <section class="categories" id="categories">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <div class="section-header">
+      <div class="section-title text-center">
+        <h1>Наши клиенты</h1>
+      </div>
+    </div>
+
+    <canvas id="clientsChart" width="400" height="200"></canvas>
+    <script src="./js/stats/clients.js"></script>
+
+    <br><br>
+
+    <div class="section-header">
+      <div class="section-title text-center">
+        <h1>Голосование по настольным играм</h1>
+      </div>
+    </div>
+
+    <canvas id="votesChart" width="400" height="200"></canvas>
+    <script src="./js/stats/votes.js"></script>
+
+    <br><br>
+
+    <div class="section-header">
+      <div class="section-title text-center">
+        <h1>Популярность категорий</h1>
+      </div>
+    </div>
+
+    <canvas id="pieChart" width="400" height="200"></canvas>
+    <script src="./js/stats/pie.js"></script>
+
+    <br><br>
+
+    <div class="section-header">
+      <div class="section-title text-center">
+        <h1>Кто играет в настольные игры больше?</h1>
+      </div>
+    </div>
+
+    <canvas id="barChart" width="400" height="200"></canvas>
+    <script src="./js/stats/bar.js"></script>
+
+    <br><br>
+
+    <div class="section-header">
+      <div class="section-title text-center">
+        <h1>Как часто мы играем?</h1>
+      </div>
+    </div>
+
+    <canvas id="dropChart" width="400" height="200"></canvas>
+    <script src="./js/stats/drop.js"></script>
+
+
+  </section>
+
+
+  <!------- Footer Start ------->
+  <footer>
+    <div class="container-fluid">
+      <div class="row text-left g-5">
+        <div class="col-md-5 col-sm-12">
+          <h2>АДРЕС</h2>
+          <p class="pe-3">г. Москва, ул. Таллинская 34</p>
+          <h2 class="mt-5">КОНТАКТЫ</h2>
+          <p class="pe-3">Почта: <i>adpiskunov@miem.hse.ru</i><br>Телефон: <i>+79225563515</i></p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h2>НОВОСТНАЯ РАССЫЛКА</h2>
+          <p>Подпишитесь на последние новости настольных игр</p>
+          <form class="form-inline">
+            <div class="col">
+              <div class="input-group pe-5">
+                <input type="text" class="form-control" id="subscribe-email" placeholder="Email">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h2>МЫ В СОЦСЕТЯХ</h2>
+          <div class="socials d-flex flex-row flex-wrap">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="text-center footer-end-text">
+        <span>© 2021. Stats service Inc.</span>
+      </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+  <script src="./js/main.js"></script>
+  <script src="./js/dropdown.js"></script>
+</body>
+
+</html>
